@@ -17,11 +17,11 @@ def contig_name(seqid):
 def orf_number(seqid):
     return seqid.split('_')[-1]
 
-# Three dictionaries are built with a single for loop;
-# The first one lists, for each crAss-like contig in the database, the reference sequences which match its own proteins
+# Three dictionaries are built:
+# The first one lists, for each crAss-like contig in the database, the reference sequences which match its own proteins;
 contigs_hits = {}
 
-# In the second one every query sequence is linked to all the reference sequences it hits
+# In the second one every query sequence is linked to all the reference sequences it hits.
 queries_hits = {}
 
 for line in blast_output:
