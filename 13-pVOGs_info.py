@@ -8,8 +8,6 @@ import pandas as pd
 from scipy import stats
 from matplotlib import pyplot as plt
 
-get_ipython().magic('matplotlib inline')
-
 podo_vogs = pd.read_csv("average_info_pop_pvogs", sep='\t')
 
 vogs_sizes = pd.read_csv("vogs_sizes", sep='\t')
