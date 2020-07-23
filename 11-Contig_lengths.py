@@ -18,5 +18,5 @@ with open('good_contigs_ids', 'r') as f:
 good_contig_lens = [len(contigs[contig].seq) for contig in contigs if contigs[contig].id in good_contigs]
 
 plt.violinplot([good_contig_lens, contiglens], vert=False, showmedians=True)
-plt.yticks((1, 2), ( "viable contigs", "all contigs"))
+plt.yticks((1, 2), ("viable contigs", "all contigs"))
 plt.xlabel("contig length (bases)")
